@@ -1,0 +1,3 @@
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_6.6.1)
+INFO:paramiko.transport:Authentication (keyboard-interactive) successful!
+arista1#

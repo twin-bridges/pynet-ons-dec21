@@ -1,0 +1,519 @@
+
+Last login: Fri Dec  3 19:01:23 2021 from 52.53.158.138
+--- JUNOS 18.4R1.8 Kernel 64-bit  JNPR-11.0-20181207.6c2f68b_2_bu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+set cli screen-width 511
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+pyclass@vmx1> set cli screen-width 511 
+Screen width set to 511
+
+pyclass@vmx1> set cli complete-on-space off 
+set cli screen-length 0
+Disabling complete-on-space
+
+pyclass@vmx1> set cli screen-length 0 
+Screen length set to 0
+
+pyclass@vmx1> 
+
+pyclass@vmx1> 
+
+
+pyclass@vmx1> 
+
+pyclass@vmx1> show interfaces 
+Physical interface: cbp0, Enabled, Physical link is Up
+  Interface index: 129, SNMP ifIndex: 502
+  Type: Ethernet, Link-level type: Ethernet, MTU: 9192
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps
+  Link type      : Full-Duplex
+  Link flags     : None
+  Current address: 2c:6b:f5:5c:58:11, Hardware address: 2c:6b:f5:5c:58:11
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: demux0, Enabled, Physical link is Up
+  Interface index: 128, SNMP ifIndex: 501
+  Type: Software-Pseudo, MTU: 9192, Clocking: 1
+  Device flags   : Present Running
+  Interface flags: Point-To-Point SNMP-Traps
+  Link type      : Full-Duplex
+  Link flags     : None
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: dsc, Enabled, Physical link is Up
+  Interface index: 5, SNMP ifIndex: 5
+  Type: Software-Pseudo, MTU: Unlimited
+  Device flags   : Present Running
+  Interface flags: Point-To-Point SNMP-Traps
+  Link flags     : None
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: em1, Enabled, Physical link is Up
+  Interface index: 65, SNMP ifIndex: 23
+  Type: Ethernet, Link-level type: Ethernet, MTU: 1514, Speed: 1000mbps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps
+  Link type      : Full-Duplex
+  Current address: 52:54:00:12:bd:fe, Hardware address: 52:54:00:12:bd:fe
+  Last flapped   : 2020-07-14 16:26:17 UTC (72w3d 02:37 ago)
+    Input packets : 187903004
+    Output packets: 144111798
+
+  Logical interface em1.0 (Index 3) (SNMP ifIndex 24)
+    Flags: Up SNMP-Traps 0x4004000 Encapsulation: ENET2
+    Input packets : 187901970
+    Output packets: 144111800
+    Protocol inet, MTU: 1500
+    Max nh cache: 75000, New hold nh limit: 75000, Curr nh cnt: 1, Curr new hold cnt: 0, NH drop cnt: 0
+      Flags: Is-Primary
+      Addresses, Flags: Is-Preferred
+        Destination: 10/8, Local: 10.0.0.4, Broadcast: 10.255.255.255
+      Addresses, Flags: Preferred Kernel Is-Preferred
+        Destination: 128/2, Local: 128.0.0.1, Broadcast: 191.255.255.255
+      Addresses, Flags: Primary Is-Default Is-Primary
+        Destination: 128/2, Local: 128.0.0.4, Broadcast: 191.255.255.255
+    Protocol inet6, MTU: 1500
+    Max nh cache: 75000, New hold nh limit: 75000, Curr nh cnt: 1, Curr new hold cnt: 0, NH drop cnt: 0
+      Flags: Is-Primary
+      Addresses, Flags: Is-Preferred
+        Destination: fe80::/64, Local: fe80::5254:ff:fe12:bdfe
+      Addresses, Flags: Is-Default Is-Preferred Is-Primary
+        Destination: fec0::/64, Local: fec0::a:0:0:4
+    Protocol tnp, MTU: 1500
+      Flags: Primary, Is-Primary
+      Addresses
+        Local: 0x4
+
+Physical interface: esi, Enabled, Physical link is Up
+  Interface index: 134, SNMP ifIndex: 507
+  Type: Software-Pseudo, Link-level type: VxLAN-Tunnel-Endpoint, MTU: Unlimited, Speed: Unlimited
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps
+  Link type      : Full-Duplex
+  Link flags     : None
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: fti0, Enabled, Physical link is Up
+  Interface index: 136, SNMP ifIndex: 509
+  Type: FTI, Link-level type: Flexible-tunnel-Interface, MTU: Unlimited, Speed: Unlimited
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps
+  Link type      : Full-Duplex
+  Link flags     : None
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: fti1, Enabled, Physical link is Up
+  Interface index: 137, SNMP ifIndex: 510
+  Type: FTI, Link-level type: Flexible-tunnel-Interface, MTU: Unlimited, Speed: Unlimited
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps
+  Link type      : Full-Duplex
+  Link flags     : None
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: fti2, Enabled, Physical link is Up
+  Interface index: 138, SNMP ifIndex: 511
+  Type: FTI, Link-level type: Flexible-tunnel-Interface, MTU: Unlimited, Speed: Unlimited
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps
+  Link type      : Full-Duplex
+  Link flags     : None
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: fti3, Enabled, Physical link is Up
+  Interface index: 139, SNMP ifIndex: 512
+  Type: FTI, Link-level type: Flexible-tunnel-Interface, MTU: Unlimited, Speed: Unlimited
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps
+  Link type      : Full-Duplex
+  Link flags     : None
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: fti4, Enabled, Physical link is Up
+  Interface index: 140, SNMP ifIndex: 513
+  Type: FTI, Link-level type: Flexible-tunnel-Interface, MTU: Unlimited, Speed: Unlimited
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps
+  Link type      : Full-Duplex
+  Link flags     : None
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: fti5, Enabled, Physical link is Up
+  Interface index: 141, SNMP ifIndex: 514
+  Type: FTI, Link-level type: Flexible-tunnel-Interface, MTU: Unlimited, Speed: Unlimited
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps
+  Link type      : Full-Duplex
+  Link flags     : None
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: fti6, Enabled, Physical link is Up
+  Interface index: 142, SNMP ifIndex: 515
+  Type: FTI, Link-level type: Flexible-tunnel-Interface, MTU: Unlimited, Speed: Unlimited
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps
+  Link type      : Full-Duplex
+  Link flags     : None
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: fti7, Enabled, Physical link is Up
+  Interface index: 143, SNMP ifIndex: 516
+  Type: FTI, Link-level type: Flexible-tunnel-Interface, MTU: Unlimited, Speed: Unlimited
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps
+  Link type      : Full-Duplex
+  Link flags     : None
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: fxp0, Enabled, Physical link is Up
+  Interface index: 64, SNMP ifIndex: 1
+  Type: Ethernet, Link-level type: Ethernet, MTU: 1514, Speed: 1000mbps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps
+  Link type      : Full-Duplex
+  Current address: 02:0c:91:1d:fc:08, Hardware address: 02:0c:91:1d:fc:08
+  Last flapped   : 2020-07-14 16:26:18 UTC (72w3d 02:37 ago)
+    Input packets : 5329468
+    Output packets: 5751017
+
+  Logical interface fxp0.0 (Index 4) (SNMP ifIndex 13)
+    Flags: Up SNMP-Traps 0x4004000 Encapsulation: ENET2
+    Input packets : 5329509
+    Output packets: 5751189
+    Protocol inet, MTU: 1500
+    Max nh cache: 75000, New hold nh limit: 75000, Curr nh cnt: 1, Curr new hold cnt: 0, NH drop cnt: 0
+      Flags: Sendbcast-pkt-to-re, Is-Primary
+      Addresses, Flags: Is-Default Is-Preferred Is-Primary
+        Destination: 172.30.0/24, Local: 172.30.0.221, Broadcast: 172.30.0.255
+
+Physical interface: gre, Enabled, Physical link is Up
+  Interface index: 10, SNMP ifIndex: 8
+  Type: GRE, Link-level type: GRE, MTU: Unlimited, Speed: Unlimited
+  Device flags   : Present Running
+  Interface flags: Point-To-Point SNMP-Traps
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: ipip, Enabled, Physical link is Up
+  Interface index: 11, SNMP ifIndex: 9
+  Type: IPIP, Link-level type: IP-over-IP, MTU: Unlimited, Speed: Unlimited
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: irb, Enabled, Physical link is Up
+  Interface index: 132, SNMP ifIndex: 505
+  Type: Ethernet, Link-level type: Ethernet, MTU: 1514
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps
+  Link type      : Full-Duplex
+  Link flags     : None
+  Current address: 2c:6b:f5:5c:5f:f0, Hardware address: 2c:6b:f5:5c:5f:f0
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: jsrv, Enabled, Physical link is Up
+  Interface index: 144, SNMP ifIndex: 517
+  Type: Ethernet, Link-level type: Ethernet, MTU: 1514
+  Device flags   : Present Running
+  Link type      : Full-Duplex
+  Link flags     : None
+  Current address: 2c:6b:f5:5c:5f:c0, Hardware address: 2c:6b:f5:5c:5f:c0
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+  Logical interface jsrv.1 (Index 324) (SNMP ifIndex 518)
+    Flags: Up 0x24004000 Encapsulation: unknown
+    Bandwidth: 1Gbps
+    Routing Instance: None Bridging Domain: None
+    Input packets : 0
+    Output packets: 0
+    Protocol inet, MTU: 1514
+    Max nh cache: 75000, New hold nh limit: 75000, Curr nh cnt: 0, Curr new hold cnt: 0, NH drop cnt: 0
+      Flags: Is-Primary
+      Addresses, Flags: Primary Is-Default Is-Preferred Is-Primary
+        Destination: 128/2, Local: 128.0.0.127, Broadcast: 191.255.255.255
+
+Physical interface: lo0, Enabled, Physical link is Up
+  Interface index: 6, SNMP ifIndex: 6
+  Type: Loopback, MTU: Unlimited
+  Device flags   : Present Running Loopback
+  Interface flags: SNMP-Traps
+  Link flags     : None
+  Last flapped   : Never
+    Input packets : 52590456
+    Output packets: 52590456
+
+  Logical interface lo0.16384 (Index 321) (SNMP ifIndex 21)
+    Flags: SNMP-Traps Encapsulation: Unspecified
+    Input packets : 0
+    Output packets: 0
+    Protocol inet, MTU: Unlimited
+    Max nh cache: 0, New hold nh limit: 0, Curr nh cnt: 0, Curr new hold cnt: 0, NH drop cnt: 0
+      Addresses
+        Local: 127.0.0.1
+
+  Logical interface lo0.16385 (Index 320) (SNMP ifIndex 22)
+    Flags: SNMP-Traps Encapsulation: Unspecified
+    Input packets : 52590376
+    Output packets: 52590376
+    Protocol inet, MTU: Unlimited
+    Max nh cache: 0, New hold nh limit: 0, Curr nh cnt: 0, Curr new hold cnt: 0, NH drop cnt: 0
+
+Physical interface: lsi, Enabled, Physical link is Up
+  Interface index: 4, SNMP ifIndex: 4
+  Type: Software-Pseudo, Link-level type: LSI, MTU: Unlimited, Speed: Unlimited
+  Device flags   : Present Running
+  Link flags     : None
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: mtun, Enabled, Physical link is Up
+  Interface index: 66, SNMP ifIndex: 12
+  Type: Multicast-GRE, Link-level type: GRE, MTU: Unlimited, Speed: Unlimited
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: pimd, Enabled, Physical link is Up
+  Interface index: 26, SNMP ifIndex: 11
+  Type: PIMD, Link-level type: PIM-Decapsulator, MTU: Unlimited, Speed: Unlimited
+  Device flags   : Present Running
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: pime, Enabled, Physical link is Up
+  Interface index: 25, SNMP ifIndex: 10
+  Type: PIME, Link-level type: PIM-Encapsulator, MTU: Unlimited, Speed: Unlimited
+  Device flags   : Present Running
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: pip0, Enabled, Physical link is Up
+  Interface index: 130, SNMP ifIndex: 503
+  Type: Ethernet, Link-level type: Ethernet, MTU: 9192
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps
+  Link type      : Full-Duplex
+  Link flags     : None
+  Current address: 2c:6b:f5:5c:5f:b0, Hardware address: 2c:6b:f5:5c:5f:b0
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: pp0, Enabled, Physical link is Up
+  Interface index: 131, SNMP ifIndex: 504
+  Type: PPPoE, Link-level type: PPPoE, MTU: 1532
+  Device flags   : Present Running
+  Interface flags: Point-To-Point SNMP-Traps
+  Link type      : Full-Duplex
+  Link flags     : None
+
+Physical interface: rbeb, Enabled, Physical link is Up
+  Interface index: 135, SNMP ifIndex: 508
+  Type: Software-Pseudo, Link-level type: Remote-BEB, MTU: Unlimited, Speed: Unlimited
+  Device flags   : Present Running
+  Link type      : Full-Duplex
+  Link flags     : None
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: tap, Enabled, Physical link is Up
+  Interface index: 12, SNMP ifIndex: 7
+  Type: Software-Pseudo, Link-level type: Interface-Specific, MTU: Unlimited, Speed: Unlimited
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps
+  Link flags     : None
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: vtep, Enabled, Physical link is Up
+  Interface index: 133, SNMP ifIndex: 506
+  Type: Software-Pseudo, Link-level type: VxLAN-Tunnel-Endpoint, MTU: Unlimited, Speed: Unlimited
+  Device flags   : Present Running
+  Link type      : Full-Duplex
+  Link flags     : None
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+pyclass@vmx1> exit
