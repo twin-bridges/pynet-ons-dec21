@@ -6,7 +6,7 @@ from jnpr.junos import Device
 from jnpr.junos.op.routes import RouteTable
 from jnpr.junos.op.arp import ArpTable
 
-import pdbr # noqa
+import pdbr  # noqa
 
 
 def check_connected(device):

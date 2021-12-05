@@ -2,7 +2,7 @@ from jnpr.junos import Device
 from jnpr.junos.op.ethport import EthPortTable
 from getpass import getpass
 from rich import print
-import pdbr # noqa
+import pdbr  # noqa
 
 a_device = Device(host="srx1.lasthop.io", user="pyclass", password=getpass())
 a_device.open()
