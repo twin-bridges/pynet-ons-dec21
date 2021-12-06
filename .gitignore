@@ -127,3 +127,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+eapi_examples/.eapi.conf

@@ -2,6 +2,7 @@
 from jnpr.junos import Device
 from lxml import etree
 from getpass import getpass
+import pdbr  # noqa
 
 password = getpass()
 device = {"host": "vmx1.lasthop.io", "user": "pyclass", "password": password}
@@ -9,9 +10,7 @@ device = {"host": "vmx1.lasthop.io", "user": "pyclass", "password": password}
 a_device = Device(**device)
 a_device.open()
 
-import ipdb  # noqa
-
-ipdb.set_trace()
+pdbr.set_trace()
 # show version | display xml rpc
 # <get-software-information>
 xml_out = a_device.rpc.get_software_information()

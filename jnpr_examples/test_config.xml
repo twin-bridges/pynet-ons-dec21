@@ -1,10 +1,12 @@
 <configuration>
-        <routing-options>
-            <static>
-                <route>
-                    <name>1.1.4.0/24</name>
-                    <next-hop>10.220.88.1</next-hop>
-                </route>
-            </static>
-        </routing-options>
+    <system>                    
+        <ntp>                   
+            <server>            
+                <name>130.126.24.24</name>
+            </server>           
+            <server>            
+                <name>152.2.21.1</name>
+            </server>           
+        </ntp> 
+    </system>                    
 </configuration>
