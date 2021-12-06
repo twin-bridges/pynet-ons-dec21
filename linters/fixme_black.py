@@ -2,7 +2,6 @@ from my_devices import network_devices
 from napalm import get_network_driver
 from pprint import pprint
 
-
 def open_napalm_connection(device):
     """Funtion to open napalm connection and return connection object"""
     # Copy dictionary to ensure original object is not modified
@@ -14,16 +13,15 @@ def open_napalm_connection(device):
     conn.open()
     return conn
 
-
 def main():
     connections = []
     for device in network_devices:
         conn = open_napalm_connection(device)
         connections.append(conn)
 
-    print("\n\n")
-    print("Print facts for all devices in connections list")
-    print("-" * 20)
+    print('\n\n')
+    print('Print facts for all devices in connections list')
+    print('-' * 20)
     for conn in connections:
         print()
         print("-" * 6)
