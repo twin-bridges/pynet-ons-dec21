@@ -1,0 +1,20 @@
+
+4. PyEZ RPC operations:
+
+4a. Manually SSH to the vmx1 device and execute:
+
+pyclass@vmx1> show interfaces terse | display xml rpc
+
+Use this command to learn the direct RPC method name. You will use this method
+name to retrieve the interface information from the device in step 4b.
+
+4b. Open a PyEZ connection to the vmx1 device.
+
+Execute the RPC method that you learned in step 4a. Save the output of this RPC
+method call to a variable named "xml_out".
+
+Use the following command to print out this XML output.
+
+from lxml import etree
+print(etree.tostring(xml_out, encoding="unicode", pretty_print=True))
+
