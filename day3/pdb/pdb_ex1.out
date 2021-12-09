@@ -1,122 +1,142 @@
 $ python pdb_ex1.py 
+> /home/ktbyers/pynet-ons-dec21/day3/pdb/pdb_ex1.py(10)<module>()
+      8 
+      9 pdbr.set_trace()
+---> 10 print()
+     11 return_val = my_func(10, 20, 30)
+     12 print("Calling with three positional args: {}".format(return_val))
 
+(Pdbr) l
+   5 def my_func(x, y, z=20):                                                                          
+   6     return x + y + z                                                                              
+   7                                                                                                   
+   8                                                                                                   
+   9 pdbr.set_trace()                                                                                  
+❱ 10 print()                                                                                           
+  11 return_val = my_func(10, 20, 30)                                                                  
+  12 print("Calling with three positional args: {}".format(return_val))                                
+  13                                                                                                   
+  14 return_val = my_func(x=10, y=20)                                                                  
+  15 print("Calling with two named args: {}".format(return_val))                                       
+(Pdbr) n
+
+> /home/ktbyers/pynet-ons-dec21/day3/pdb/pdb_ex1.py(11)<module>()
+      9 pdbr.set_trace()
+     10 print()
+---> 11 return_val = my_func(10, 20, 30)
+     12 print("Calling with three positional args: {}".format(return_val))
+     13 
+
+(Pdbr) n
+> /home/ktbyers/pynet-ons-dec21/day3/pdb/pdb_ex1.py(12)<module>()
+     10 print()
+     11 return_val = my_func(10, 20, 30)
+---> 12 print("Calling with three positional args: {}".format(return_val))
+     13 
+     14 return_val = my_func(x=10, y=20)
+
+(Pdbr) n
 Calling with three positional args: 60
-> /home/student35/pynet-ons-ds/day3/pdb_ex1.py(15)<module>()
-     14 ipdb.set_trace()
----> 15 return_val = my_func(x=10, y=20)
-     16 print("Calling with two named args: {}".format(return_val))
+> /home/ktbyers/pynet-ons-dec21/day3/pdb/pdb_ex1.py(14)<module>()
+     12 print("Calling with three positional args: {}".format(return_val))
+     13 
+---> 14 return_val = my_func(x=10, y=20)
+     15 print("Calling with two named args: {}".format(return_val))
+     16 
 
-ipdb> list 15                                                                                                                                                                                             
-     10 return_val = my_func(10, 20, 30)
-     11 print("Calling with three positional args: {}".format(return_val))
-     12 
-     13 import ipdb
-     14 ipdb.set_trace()
----> 15 return_val = my_func(x=10, y=20)
-     16 print("Calling with two named args: {}".format(return_val))
-     17 
-     18 return_val = my_func(10, z=13, y=20)
-     19 print("Calling with one positional and two named args: {}".format(return_val))
-     20 
-
-ipdb> n                                                                                                                                                                                                   
-> /home/student35/pynet-ons-ds/day3/pdb_ex1.py(16)<module>()
-     15 return_val = my_func(x=10, y=20)
----> 16 print("Calling with two named args: {}".format(return_val))
-     17 
-
-ipdb> n                                                                                                                                                                                                   
-Calling with two named args: 50
-> /home/student35/pynet-ons-ds/day3/pdb_ex1.py(18)<module>()
-     17 
----> 18 return_val = my_func(10, z=13, y=20)
-     19 print("Calling with one positional and two named args: {}".format(return_val))
-
-ipdb> n                                                                                                                                                                                                   
-> /home/student35/pynet-ons-ds/day3/pdb_ex1.py(19)<module>()
-     18 return_val = my_func(10, z=13, y=20)
----> 19 print("Calling with one positional and two named args: {}".format(return_val))
-     20 
-
-ipdb> p return_val                                                                                                                                                                                        
-43
-ipdb> !my_var = 72                                                                                                                                                                                        
-ipdb> p my_var                                                                                                                                                                                            
+(Pdbr) print(return_val)
+60
+(Pdbr) p return_val
+60
+(Pdbr) !my_var = 72
+(Pdbr) p my_var
 72
-ipdb> list                                                                                                                                                                                                
-     14 ipdb.set_trace()
-     15 return_val = my_func(x=10, y=20)
-     16 print("Calling with two named args: {}".format(return_val))
-     17 
-     18 return_val = my_func(10, z=13, y=20)
----> 19 print("Calling with one positional and two named args: {}".format(return_val))
-     20 
-     21 return_val = my_func(x="x", y="y", z="z")
-     22 print("Calling with three strings: {}".format(return_val))
-     23 
-     24 return_val = my_func(x=["x"], y=["y"], z=["z"])
-
-ipdb> b 22                                                                                                                                                                                                
-Breakpoint 1 at /home/student35/pynet-ons-ds/day3/pdb_ex1.py:22
-ipdb> list                                                                                                                                                                                                
-     25 print("Calling with three lists: {}".format(return_val))
-     26 print()
-
-ipdb> list 19                                                                                                                                                                                             
-     14 ipdb.set_trace()
-     15 return_val = my_func(x=10, y=20)
-     16 print("Calling with two named args: {}".format(return_val))
-     17 
-     18 return_val = my_func(10, z=13, y=20)
----> 19 print("Calling with one positional and two named args: {}".format(return_val))
-     20 
-     21 return_val = my_func(x="x", y="y", z="z")
-1    22 print("Calling with three strings: {}".format(return_val))
-     23 
-     24 return_val = my_func(x=["x"], y=["y"], z=["z"])
-
-ipdb> c                                                                                                                                                                                                   
+(Pdbr) l
+   9 pdbr.set_trace()                                                                                  
+  10 print()                                                                                           
+  11 return_val = my_func(10, 20, 30)                                                                  
+  12 print("Calling with three positional args: {}".format(return_val))                                
+  13                                                                                                   
+❱ 14 return_val = my_func(x=10, y=20)                                                                  
+  15 print("Calling with two named args: {}".format(return_val))                                       
+  16                                                                                                   
+  17 return_val = my_func(10, z=13, y=20)                                                              
+  18 print("Calling with one positional and two named args: {}".format(return_val))                    
+  19                                                                                                   
+(Pdbr) ll
+   1 #!/usr/bin/env python                                                                             
+   2 import pdbr  # noqa                                                                               
+   3                                                                                                   
+   4                                                                                                   
+   5 def my_func(x, y, z=20):                                                                          
+   6     return x + y + z                                                                              
+   7                                                                                                   
+   8                                                                                                   
+   9 pdbr.set_trace()                                                                                  
+  10 print()                                                                                           
+  11 return_val = my_func(10, 20, 30)                                                                  
+  12 print("Calling with three positional args: {}".format(return_val))                                
+  13                                                                                                   
+❱ 14 return_val = my_func(x=10, y=20)                                                                  
+  15 print("Calling with two named args: {}".format(return_val))                                       
+  16                                                                                                   
+  17 return_val = my_func(10, z=13, y=20)                                                              
+  18 print("Calling with one positional and two named args: {}".format(return_val))                    
+  19                                                                                                   
+  20 return_val = my_func(x="x", y="y", z="z")                                                         
+  21 print("Calling with three strings: {}".format(return_val))                                        
+  22                                                                                                   
+  23 return_val = my_func(x=["x"], y=["y"], z=["z"])                                                   
+  24 print("Calling with three lists: {}".format(return_val))                                          
+  25 print()                                                                                           
+  26                                                                                                   
+(Pdbr) b 20
+Breakpoint 1 at /home/ktbyers/pynet-ons-dec21/day3/pdb/pdb_ex1.py:20
+(Pdbr) c
+Calling with two named args: 50
 Calling with one positional and two named args: 43
-> /home/student35/pynet-ons-ds/day3/pdb_ex1.py(22)<module>()
-     21 return_val = my_func(x="x", y="y", z="z")
-1--> 22 print("Calling with three strings: {}".format(return_val))
-     23 
+> /home/ktbyers/pynet-ons-dec21/day3/pdb/pdb_ex1.py(20)<module>()
+     18 print("Calling with one positional and two named args: {}".format(return_val))
+     19 
+1--> 20 return_val = my_func(x="x", y="y", z="z")
+     21 print("Calling with three strings: {}".format(return_val))
+     22 
 
-ipdb> n                                                                                                                                                                                                   
-Calling with three strings: xyz
-> /home/student35/pynet-ons-ds/day3/pdb_ex1.py(24)<module>()
-     23 
----> 24 return_val = my_func(x=["x"], y=["y"], z=["z"])
-     25 print("Calling with three lists: {}".format(return_val))
-
-ipdb> s                                                                                                                                                                                                   
+(Pdbr) s
 --Call--
-> /home/student35/pynet-ons-ds/day3/pdb_ex1.py(5)my_func()
+> /home/ktbyers/pynet-ons-dec21/day3/pdb/pdb_ex1.py(5)my_func()
+      3 
       4 
 ----> 5 def my_func(x, y, z=20):
       6     return x + y + z
+      7 
 
-ipdb> n                                                                                                                                                                                                   
-> /home/student35/pynet-ons-ds/day3/pdb_ex1.py(6)my_func()
+(Pdbr) u
+> /home/ktbyers/pynet-ons-dec21/day3/pdb/pdb_ex1.py(20)<module>()
+     18 print("Calling with one positional and two named args: {}".format(return_val))
+     19 
+1--> 20 return_val = my_func(x="x", y="y", z="z")
+     21 print("Calling with three strings: {}".format(return_val))
+     22 
+
+(Pdbr) d
+> /home/ktbyers/pynet-ons-dec21/day3/pdb/pdb_ex1.py(5)my_func()
+      3 
+      4 
+----> 5 def my_func(x, y, z=20):
+      6     return x + y + z
+      7 
+
+(Pdbr) n
+> /home/ktbyers/pynet-ons-dec21/day3/pdb/pdb_ex1.py(6)my_func()
+      4 
       5 def my_func(x, y, z=20):
 ----> 6     return x + y + z
       7 
+      8 
 
-ipdb> up                                                                                                                                                                                                  
-> /home/student35/pynet-ons-ds/day3/pdb_ex1.py(24)<module>()
-     23 
----> 24 return_val = my_func(x=["x"], y=["y"], z=["z"])
-     25 print("Calling with three lists: {}".format(return_val))
-
-ipdb> down                                                                                                                                                                                                
-> /home/student35/pynet-ons-ds/day3/pdb_ex1.py(6)my_func()
-      5 def my_func(x, y, z=20):
-----> 6     return x + y + z
-      7 
-
-ipdb> args                                                                                                                                                                                                
-x = ['x']
-y = ['y']
-z = ['z']
-ipdb> q                                                                                                                                                                                                   
-Exiting Debugger.
+(Pdbr) args
+x = 'x'
+y = 'y'
+z = 'z'
+(Pdbr) q

@@ -17,6 +17,7 @@ cfg_commands = [
 ]
 
 with ConnectHandler(**device) as net_connect:
+    # output = net_connect.send_config_set(cfg_commands, error_pattern=r"% Invalid")
     output = net_connect.send_config_set(cfg_commands)
     output += net_connect.save_config()
 

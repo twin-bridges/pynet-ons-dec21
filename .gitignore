@@ -128,3 +128,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 eapi_examples/.eapi.conf
+/netmiko_example/my_session.txt
