@@ -21,3 +21,5 @@ output = device.get_facts()
 print()
 print(output)
 print()
+
+device.close()

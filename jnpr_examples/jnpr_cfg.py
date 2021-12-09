@@ -5,7 +5,7 @@ import pdbr
 
 a_device = Device(host="vmx2.lasthop.io", user="pyclass", password=getpass())
 a_device.open()
-a_device.timeout = 60
+a_device.timeout = 120
 
 cfg = Config(a_device)
 cfg.lock()

@@ -31,3 +31,4 @@ if __name__ == "__main__":
     device.commit_config()
 
     device.rollback()
+    device.close()

@@ -24,3 +24,5 @@ output = device.get_vlans()
 print()
 print(output)
 print()
+
+device.close()

@@ -1,0 +1,8 @@
+vlan 620
+   name blue620
+vlan 621
+   name blue621
+vlan 622
+   name blue622
+vlan 623
+   name blue623
