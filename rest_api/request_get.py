@@ -1,6 +1,6 @@
 import requests
 from rich import print
-import pdbr
+import pdbr  # noqa
 from urllib3.exceptions import InsecureRequestWarning
 
 requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
