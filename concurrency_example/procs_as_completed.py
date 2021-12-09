@@ -4,12 +4,11 @@ import random
 
 
 TASKS = 20
-# Note: max_workers  will default to num processors on maching * 5 if not given
 PROC_POOL = 8
 
 
 def math_calculation():
-    for i in range(random.randint(10000000, 30000000)):
+    for i in range(random.randint(1000000, 3000000)):
         final_sqrt = math.sqrt(i)
     return final_sqrt
 
