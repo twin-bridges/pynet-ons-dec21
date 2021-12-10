@@ -1,0 +1,45 @@
+# CD to the directory of your "test" GitHub repository
+$ cd ~/pynet-test
+
+# Create a .github directory
+$ mkdir .github
+
+# Create a workflows subdirectory
+$ mkdir .github/workflows 
+
+# CD into .github/workflows
+$ cd .github/workflows/
+
+# Add a commit.yaml file, base it off of reference file here:
+https://github.com/twin-bridges/pynet-ons-dec21/blob/main/ci_cd/commit.yaml
+
+$ cp [Above commit.yaml] {repository_base}/.github/workflows/commit.yaml
+
+# Make any changes to file
+$ vi commit.yaml 
+
+# Add a requirements.txt file for packages you want to install.
+# Ensure you have the following three packages
+----
+black==21.12b0
+pytest==6.2.5
+pylama==7.7.1
+----
+
+# requirements.txt should be in the base of your repository
+$ cd {repository_base}
+$ vi requirements.txt
+
+# Test black locally on the repository
+$ black --check .
+
+# Test pylama locally on the repository
+$ pylama .
+
+# Add the .github directory, requirements.txt, and any other needed files into
+# Git
+
+# Push changes up to GitHub
+$ git push origin_ssh main
+
+# Verify GitHub Action status on GitHub
