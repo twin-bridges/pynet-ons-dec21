@@ -7,3 +7,8 @@ product.
 Write and execute two unit tests. One unit test should test 'func1';
 the other unit test should test 'func2'.
 
+Write a unit test for func2 that uses pytest parametrize and tests
+four different pairs of numbers (and their corresponding result)
+
+Use py.test to execute your tests. Ensure that they all pass.
+

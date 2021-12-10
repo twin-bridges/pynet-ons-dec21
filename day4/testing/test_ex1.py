@@ -1,3 +1,6 @@
+import pytest
+
+
 def func1(x, y):
     return x + y
 
@@ -12,3 +15,10 @@ def test_sum():
 
 def test_product():
     assert func2(7, 9) == 63
+
+
+@pytest.mark.parametrize(
+    "num1, num2, result", [(77, 0, 0), (13, 13, 169), (-1, -1, 1), (-7, 7, -49)]
+)
+def test_product_params(num1, num2, result):
+    assert func2(num1, num2) == result
