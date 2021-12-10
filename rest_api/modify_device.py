@@ -48,7 +48,7 @@ if __name__ == "__main__":
     for field in ["device_role", "device_type", "platform", "site", "rack"]:
         arista6[field] = arista6[field]["id"]
     arista6["status"] = 1
-    arista6["rack"] = 1
+    arista6["rack"] = 2
 
     response = requests.put(
         url, headers=http_headers, data=json.dumps(arista6), verify=False
