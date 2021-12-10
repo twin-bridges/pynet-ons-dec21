@@ -1,3 +1,4 @@
+import sys
 import pytest
 
 
@@ -22,3 +23,7 @@ def test_product():
 )
 def test_product_params(num1, num2, result):
     assert func2(num1, num2) == result
+
+@pytest.mark.skipif(sys.version_info == (3, 7), reason="because")
+def test_sum2():
+    assert func1(10, 99) == 109
