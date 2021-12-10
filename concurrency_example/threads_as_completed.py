@@ -8,7 +8,7 @@ THREAD_POOL = 8
 
 
 def math_calculation():
-    for i in range(random.randint(10000000, 30000000)):
+    for i in range(random.randint(1000000, 3000000)):
         final_sqrt = math.sqrt(i)
     return final_sqrt
 
